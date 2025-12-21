@@ -35,6 +35,32 @@
             border-radius: 6px;
         }
 
+        /* --- New Menu Styles --- */
+        .main-nav ul {
+            list-style: none; /* Removes bullet points */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Aligns list items horizontally */
+            gap: 15px; /* Adds space between items */
+            flex-wrap: wrap; /* Allows menu to wrap on small screens */
+            justify-content: center;
+        }
+
+        .main-nav a {
+            text-decoration: none; /* Removes default link underline */
+            color: #000000;
+            padding: 0 5px; /* Adds clickable area */
+        }
+        
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Optional: Add vertical dividers like | Home | Search | */
+        .main-nav li:not(:last-child) a {
+            border-right: 1px solid #ccc; 
+        }
+        
         .complaints a:hover {
             text-decoration: underline;
         }
@@ -53,9 +79,25 @@
             <source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        
+        <!-- New Menu HTML Structure -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://www.troublehoneymusic.co.za">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Radio</a></li>
+                <li><a href="#">Chord Transposer</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Request</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- End New Menu Structure -->
 
+        <!-- Keeping original complaints div, though it's redundant now -->
         <div class="complaints">
-            <a href="lfmcp.pdf" target="_blank">COMPLAINTS PROCEDURE</a>
+            <a href="https://www.troublehoneymusic.co.za">Home</a>
         </div>
 
     </div>
