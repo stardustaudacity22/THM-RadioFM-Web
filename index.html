@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>THM FM</title>	
+    <meta charset="utf-8">
+    <title>THM FM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Calibri, Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+        }
+
+        .logo img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+        }
+
+        audio {
+            width: 300px;
+            max-width: 90%;
+            border-radius: 6px;
+        }
+
+        .complaints a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .complaints a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="text-align: center;">
-<p><img src="logo.jpg"/></p>
-<!--span style="font-family: Calibri Light"><h2>HOU HIERDIE SPASIE DOP!</h2></span-->
-<span style="text-align: center;">
-<!--audio controls autoplay="autoplay"><source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">Your browser does not support the audio element.</audio-->
-<audio controls autoplay="autoplay"><source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">Your browser does not support the audio element.</audio>
-</span>
-<div style="text-align: right; padding-right: 20px; font-family: Calibri Light"><a href="lfmcp.pdf" target="_blank">COMPLAINTS PROCEDURE</a></div>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <img src="logo.jpg" alt="THM FM">
+        </div>
+
+        <audio controls autoplay>
+            <source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="complaints">
+            <a href="lfmcp.pdf" target="_blank">COMPLAINTS PROCEDURE</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
