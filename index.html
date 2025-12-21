@@ -35,13 +35,17 @@
             border-radius: 6px;
         }
 
-        /* --- New Menu Styles --- */
+        /* --- Updated Menu Styles --- */
+        .main-nav {
+            margin-top: 30px; /* Added space between audio player and menu */
+        }
+        
         .main-nav ul {
             list-style: none; /* Removes bullet points */
             padding: 0;
             margin: 0;
             display: flex; /* Aligns list items horizontally */
-            gap: 15px; /* Adds space between items */
+            gap: 0px; /* Removed default gap to use padding/border for spacing */
             flex-wrap: wrap; /* Allows menu to wrap on small screens */
             justify-content: center;
         }
@@ -49,14 +53,14 @@
         .main-nav a {
             text-decoration: none; /* Removes default link underline */
             color: #000000;
-            padding: 0 5px; /* Adds clickable area */
+            padding: 0 10px; /* Controls space on either side of the text */
         }
         
         .main-nav a:hover {
             text-decoration: underline;
         }
 
-        /* Optional: Add vertical dividers like | Home | Search | */
+        /* Add vertical dividers like | Home | Search | */
         .main-nav li:not(:last-child) a {
             border-right: 1px solid #ccc; 
         }
@@ -80,7 +84,7 @@
             Your browser does not support the audio element.
         </audio>
         
-        <!-- New Menu HTML Structure -->
+        <!-- Menu HTML Structure -->
         <nav class="main-nav">
             <ul>
                 <li><a href="https://www.troublehoneymusic.co.za">Home</a></li>
@@ -93,12 +97,6 @@
                 <li><a href="#">About Us</a></li>
             </ul>
         </nav>
-        <!-- End New Menu Structure -->
-
-        <!-- Keeping original complaints div, though it's redundant now -->
-        <div class="complaints">
-            <a href="https://www.troublehoneymusic.co.za">Home</a>
-        </div>
 
     </div>
 
