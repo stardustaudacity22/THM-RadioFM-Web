@@ -29,45 +29,57 @@
             height: auto;
         }
 
+        /* --- New Tagline Styles --- */
+        .tagline {
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #333;
+            margin: -15px 0; /* Adjusts the gap caused by the container gap */
+        }
+        
+        .tagline p {
+            margin: 0; /* Remove default paragraph margins */
+        }
+        /* --- End Tagline Styles --- */
+
         audio {
             width: 300px;
             max-width: 90%;
             border-radius: 6px;
         }
 
-        /* --- Updated Menu Styles --- */
         .main-nav {
-            margin-top: 30px; /* Added space between audio player and menu */
+            margin-top: 30px;
         }
         
         .main-nav ul {
-            list-style: none; /* Removes bullet points */
+            list-style: none;
             padding: 0;
             margin: 0;
-            display: flex; /* Aligns list items horizontally */
-            gap: 0px; /* Removed default gap to use padding/border for spacing */
-            flex-wrap: wrap; /* Allows menu to wrap on small screens */
+            display: flex;
+            gap: 0px;
+            flex-wrap: wrap;
             justify-content: center;
         }
 
         .main-nav a {
-            text-decoration: none; /* Removes default link underline */
+            text-decoration: none;
             color: #000000;
-            padding: 0 10px; /* Controls space on either side of the text */
+            padding: 0 10px;
         }
         
         .main-nav a:hover {
             text-decoration: underline;
         }
 
-        /* Add vertical dividers like | Home | Search | */
         .main-nav li:not(:last-child) a {
             border-right: 1px solid #ccc; 
         }
         
-        .complaints a:hover {
+        /* The .complaints styles are no longer needed for any HTML element */
+        /* .complaints a:hover {
             text-decoration: underline;
-        }
+        } */
     </style>
 </head>
 
@@ -79,12 +91,18 @@
             <img src="logo.jpg" alt="THM FM">
         </div>
 
+        <!-- --- New Section Added Here --- -->
+        <div class="tagline">
+            <p>Jou nommer #1 vir Pinkster liedjies, net hier op Trouble Honey Music.</p>
+            <p>Nie geaffilieer met Lede in Christus Kerk nie.</p>
+        </div>
+        <!-- --- End New Section --- -->
+
         <audio controls autoplay>
             <source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         
-        <!-- Menu HTML Structure -->
         <nav class="main-nav">
             <ul>
                 <li><a href="https://www.troublehoneymusic.co.za">Home</a></li>
@@ -97,6 +115,8 @@
                 <li><a href="#">About Us</a></li>
             </ul>
         </nav>
+
+        <!-- The complaints div that contained the duplicate Home link has been removed -->
 
     </div>
 
