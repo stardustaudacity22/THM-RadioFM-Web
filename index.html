@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>THM FM</title>
+
+    <!-- Page title (shows in browser tab & Google) -->
+    <title>THM FM – Trouble Honey Music Radio</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO meta -->
+    <meta name="description" content="Jou nommer #1 vir Pinkster liedjies, net hier op Trouble Honey Music. Luister regstreeks na THM FM. Nie geaffilieer met Lede in Christus Kerk nie.">
+    <meta name="author" content="Trouble Honey Music">
+
+    <!-- Favicon (browser tab icon) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logp.jpg">
+
+    <!-- Open Graph (Google / Facebook / WhatsApp previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="THM FM – Trouble Honey Music Radio">
+    <meta property="og:description" content="Jou nommer #1 vir Pinkster liedjies. Luister regstreeks na THM FM.">
+    <meta property="og:url" content="https://fm.troublehoneymusic.co.za/">
+    <meta property="og:image" content="https://fm.troublehoneymusic.co.za/logo.jpg">
+
+    <!-- Structured Data: tells Google your site name + logo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "THM FM – Trouble Honey Music",
+      "url": "https://fm.troublehoneymusic.co.za/",
+      "logo": "https://fm.troublehoneymusic.co.za/logo.jpg"
+    }
+    </script>
 
     <style>
         body {
@@ -29,18 +58,16 @@
             height: auto;
         }
 
-        /* --- New Tagline Styles --- */
         .tagline {
             font-size: 1rem;
             line-height: 1.4;
             color: #333;
-            margin: -15px 0; /* Adjusts the gap caused by the container gap */
+            margin: -15px 0;
         }
         
         .tagline p {
-            margin: 0; /* Remove default paragraph margins */
+            margin: 0;
         }
-        /* --- End Tagline Styles --- */
 
         audio {
             width: 300px;
@@ -57,7 +84,6 @@
             padding: 0;
             margin: 0;
             display: flex;
-            gap: 0px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -73,13 +99,8 @@
         }
 
         .main-nav li:not(:last-child) a {
-            border-right: 1px solid #ccc; 
+            border-right: 1px solid #ccc;
         }
-        
-        /* The .complaints styles are no longer needed for any HTML element */
-        /* .complaints a:hover {
-            text-decoration: underline;
-        } */
     </style>
 </head>
 
@@ -88,22 +109,19 @@
     <div class="container">
 
         <div class="logo">
-            <img src="logo.jpg" alt="THM FM">
+            <img src="logo.jpg" alt="THM FM Logo">
         </div>
 
-        <!-- --- New Section Added Here --- -->
         <div class="tagline">
             <p>Jou nommer #1 vir Pinkster liedjies, net hier op Trouble Honey Music.</p>
             <p>Nie geaffilieer met Lede in Christus Kerk nie.</p>
         </div>
-        <!-- --- End New Section --- -->
 
-        <audio controls autoplay>
+        <audio controls autoplay aria-label="THM FM Live Stream">
             <source src="https://stream.zeno.fm/1i5nz61afovtv" type="audio/mpeg">
-            Your browser does not support the audio element.
         </audio>
         
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="https://www.troublehoneymusic.co.za">Home</a></li>
                 <li><a href="https://www.troublehoneymusic.co.za/p/search.html">Search</a></li>
@@ -115,8 +133,6 @@
                 <li><a href="https://troublehoneymusic.blogspot.com/p/about-us.html">About Us</a></li>
             </ul>
         </nav>
-
-        <!-- The complaints div that contained the duplicate Home link has been removed -->
 
     </div>
 
